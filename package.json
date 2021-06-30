@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "babel src --out-dir build",
+    "build:react": "webpack --mode production ",
     "start": "node ./build/server.js",
     "dev": "nodemon  ./src/server.js --exec babel-node"
   },
@@ -19,13 +19,19 @@
     "helmet": "^4.6.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
     "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
     "nodemon": "^2.0.7"
   }
 }
+

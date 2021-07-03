@@ -9,8 +9,7 @@ export function VerifyToken (req,res,next){
             jwt.verify(token ,config.SecretToken)
             return next()
         }catch(e){
-            console.log(e)
-            res.status(409).json({error:'Token invalid'})
+            return res.status(409).json({error:'Token invalid'})
         }
     }else{
         return res.status(409).json({error:'Token not provide'});

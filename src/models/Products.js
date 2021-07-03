@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 var Product = new mongoose.Schema({
-    nombre:String,
+    name:String,
     category:String,
     price:Number,
     imgURL:String

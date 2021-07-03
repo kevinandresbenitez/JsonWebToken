@@ -5,6 +5,7 @@ import bcrypt from 'bcryptjs';
 var User = new mongoose.Schema({
     name:String,
     password:String,
+    email:String,
     role:{
         type:mongoose.SchemaTypes.ObjectId,
         rel:'Role'

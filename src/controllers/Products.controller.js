@@ -2,7 +2,7 @@ import ProductModel from '../models/Products.js';
 
 export async function GetProduct(req,res){
     var Product = await ProductModel.find({});
-    res.status(200).json(Product);
+    res.status(200).json({status:200,data:Product});
 }
 export async function CreateProduct(req,res){
     let data_form= req.body ;

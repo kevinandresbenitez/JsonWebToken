@@ -1,5 +1,4 @@
 import path from 'path';
-    /*"build": "babel src --out-dir build",*/
     
 export default  {
     entry:'./src/App/index.js',
